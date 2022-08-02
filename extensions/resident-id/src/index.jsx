@@ -1,15 +1,11 @@
 import React from 'react';
-import {
-  useExtensionApi,
-  render,
-  Banner,
-  useTranslate,
-} from '@shopify/checkout-ui-extensions-react';
+import {useExtensionApi, render, Banner} from '@shopify/checkout-ui-extensions-react';
 
-render('Checkout::Dynamic::Render', () => <App />);
+render('Checkout::DeliveryAddress::RenderBefore', () => <App />);
+render('Checkout::Contact::RenderAfter', () => <App />);
+render('Checkout::Actions::RenderBefore', () => <App />);
 
 function App() {
-  const {extensionPoint} = useExtensionApi();
-  const translate = useTranslate();
-  return <Banner>{translate('welcome', {extensionPoint})}</Banner>;
+  const {extensionPoint, i18n} = useExtensionApi();
+  return <Banner>{i18n.translate('welcome', {extensionPoint})}</Banner>;
 }
