@@ -5,16 +5,27 @@ render('Checkout::Dynamic::Render', () => <App />);
 
 function App() {
   const [error, setError] = useState(false);
-  const [residentID, setResidentID] = useState('');
+  const residentIdState = useMetafield({
+    namespace: METAFIELD_NAMESPACE,
+    key: METAFIELD_KEY,
+  });
 
   handleFieldChange = (value) => {
-    setResidentID(value);
-  };
+    updateMetafield(
+         {
+           type: 'updateMetafield',
+           namespace: METAFIELD_NAMESPACE,
+           key: METAFIELD_KEY,
+           valueType: 'string',
+           value: value
+         }
+       );
+   };
 
     return (
       <TextField 
         label='Resident ID'
-        value={residentID}
+        value={residentIdState?.value}
         error={error? 'Please provide a valid ID': false}
         onChange={handleFieldChange}
          />
