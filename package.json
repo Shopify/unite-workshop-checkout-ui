@@ -1,0 +1,21 @@
+{
+  "name": "checkout-ui-unite",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "scaffold": "shopify app scaffold",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/app": "3.5.0",
+    "@shopify/checkout-ui-extensions-react": "^0.17.0",
+    "@shopify/cli": "3.5.0",
+    "react": "^17.0.0"
+  },
+  "author": "lizkenyib"
+}
