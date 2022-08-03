@@ -1,12 +1,19 @@
-# Shopify App Template - Node
+# Checkout UI Extension - Custom Field Example
+This is the code repository to complement Checkout UI workshop. [ADD LINK]
 
-This is a template for building a [Shopify app](https://shopify.dev/apps/getting-started) using Node and React. It contains the basics for building a Shopify app.
+## Checkout UI Extensions
 
-Rather than cloning this repo, you can use your preferred package manager and the Shopify CLI with [these steps](#installing-the-template).
+Checkout UI extensions let you add custom workflows and functionality at defined points of the checkout process, and are built into apps using extension point APIs and UI components.
 
-## Benefits
+This repository provides code examples for the following
+* The different types of UI extension points
+* Using Checkout UI extension compontents
+* Saving data to metafields
+* Controlling the Checkout Flow
 
-Shopify apps are built on a variety of Shopify tools to create a great merchant experience. The [create an app](https://shopify.dev/apps/getting-started/create) tutorial in our developer documentation will guide you through creating a Shopify app using this template.
+## Shopify Apps
+
+This repository is built on the Shopify CLI App template. Shopify apps are built on a variety of Shopify tools to create a great merchant experience. The [create an app](https://shopify.dev/apps/getting-started/create) tutorial in our developer documentation will guide you through creating a Shopify app using this template.
 
 The Node app template comes with the following out-of-the-box functionality:
 
@@ -42,30 +49,6 @@ The following Shopify tools complement these third-party tools to ease app devel
 1. You must [download and install Node.js](https://nodejs.org/en/download/) if you don't already have it.
 1. You must [create a Shopify partner account](https://partners.shopify.com/signup) if you don’t have one.
 1. You must [create a development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) if you don’t have one.
-
-### Installing the template
-
-This template can be installed using your preferred package manager:
-
-Using yarn:
-
-```shell
-yarn create @shopify/app
-```
-
-Using npx:
-
-```shell
-npm init @shopify/app@latest
-```
-
-Using pnpm:
-
-```shell
-pnpm create @shopify/app@latest
-```
-
-This will clone the template and install the required dependencies.
 
 #### Local Development
 
@@ -134,19 +117,6 @@ cd web/frontend/ && SHOPIFY_API_KEY=REPLACE_ME pnpm run build
 
 You do not need to build the backend.
 
-## Hosting
-
-The following pages document the basic steps to host and deploy your application to a few popular cloud providers:
-
-- [fly.io](/web/docs/fly-io.md)
-- [Heroku](/web/docs/heroku.md)
-
-## Some things to watch out for
-
-### Using `express.json` middleware
-
-If you use the `express.json()` middleware in your app **and** if you use `Shopify.Webhooks.Registry.process()` to process webhooks API calls from Shopify (which we recommend), the webhook processing must occur ***before*** calling `app.use(express.json())`.  See the [API documentation](https://github.com/Shopify/shopify-api-node/blob/main/docs/usage/webhooks.md#note-regarding-use-of-body-parsers) for more details.
-
 ## Known issues
 
 ### Hot module replacement and Firefox
@@ -203,3 +173,4 @@ pnpm dev --tunnel-url https://tunnel-url:3000
 - [App authentication](https://shopify.dev/apps/auth)
 - [Shopify CLI](https://shopify.dev/apps/tools/cli)
 - [Shopify API Library documentation](https://github.com/Shopify/shopify-api-node/tree/main/docs)
+- [Introduction to Checkout UI extensions](https://shopify.dev/api/checkout-extensions/checkout)
