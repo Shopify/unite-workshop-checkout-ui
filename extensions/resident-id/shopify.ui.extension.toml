@@ -1,11 +1,8 @@
 type = "checkout_ui"
 name = "resident-id"
 
-
 extension_points = [
-  'Checkout::DeliveryAddress::RenderBefore',
-  'Checkout::Contact::RenderAfter',
-  'Checkout::Actions::RenderBefore'
+  'Checkout::Dynamic::Render'
 ]
 
 # [[metafields]]
