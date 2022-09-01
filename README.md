@@ -1,5 +1,5 @@
 # Checkout UI Extension - Custom Field Example
-This is the code repository to complement Checkout UI workshop. [ADD LINK]
+This is the code repository to complement [Checkout UI workshop](https://shopify.github.io/workshops/codelabs/checkout-ui-custom-field ). 
 
 ## Checkout UI Extensions
 
