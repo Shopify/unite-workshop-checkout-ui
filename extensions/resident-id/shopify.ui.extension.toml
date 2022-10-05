@@ -6,6 +6,10 @@ extension_points = [
  'Checkout::Dynamic::Render'
 ]
 
+ [capabilities]
+# network_access = true
+ block_progress = true
+
 # [[metafields]]
 # namespace = "my-namespace"
 # key = "my-key"
