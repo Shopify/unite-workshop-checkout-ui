@@ -1,3 +1,5 @@
+> **This repository is no longer maintained.** It has been archived and receives no updates or security fixes.
+
 # Checkout UI Extension - Custom Field Example
 This is the code repository to complement [Checkout UI workshop](https://shopify.github.io/workshops/codelabs/checkout-ui-custom-field ). 
 
